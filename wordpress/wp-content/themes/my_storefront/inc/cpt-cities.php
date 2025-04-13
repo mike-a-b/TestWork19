@@ -1,12 +1,13 @@
 <?php
 /**
- * Регистрация Custom Post Type "Cities"
+ * Registration Custom Post Type "Cities"
  *
  * @package my_storefront
  */
 add_action( 'init', 'register_cities_cpt' );
 function register_cities_cpt() : void
 {
+//	labels for admin panel on the page of adding a new city
 	$labels = array(
 		'name'               => __( 'Cities', 'my_storefront' ),
 		'singular_name'      => __( 'City', 'my_storefront' ),
