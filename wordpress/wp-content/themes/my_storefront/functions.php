@@ -10,9 +10,7 @@ function my_child_theme_scripts()
 // Custom Post Type Cities
 require_once get_stylesheet_directory() . '/inc/cpt-cities.php';
 require_once get_stylesheet_directory() . '/inc/metaboxes.php';
-//require_once get_stylesheet_directory() . '/inc/taxonomy-countries.php';
-//require_once get_stylesheet_directory() . '/inc/widget-weather.php';
-//require_once get_stylesheet_directory() . '/inc/custom-template-functions.php';
+require_once get_stylesheet_directory() . '/inc/taxonomy-countries.php';
 
 // Include AJAX script (файл assets/js/ajax.js)
 add_action( 'wp_enqueue_scripts', 'my_storefront_enqueue_scripts' );
