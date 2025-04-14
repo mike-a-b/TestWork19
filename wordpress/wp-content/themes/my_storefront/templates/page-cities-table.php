@@ -120,17 +120,3 @@ function get_temperature($latitude, $longitiude) {
 do_action( 'after_cities_table' );
 
 get_footer();
-
-
-//			$cities = get_posts( array(
-//				'post_type'      => 'cities',
-//				'posts_per_page' => -1,
-//			) );
-//
-//			foreach ( $cities as $city ) {
-//				echo '<tr>';
-//				echo '<td>' . esc_html( get_the_terms( $city->ID, 'countries' )[0]->name ) . '</td>';
-//				echo '<td>' . esc_html( $city->post_title ) . '</td>';
-//				echo '<td>' . esc_html( get_post_meta( $city->ID, 'temperature', true ) ) . '</td>';
-//				echo '</tr>';
-//			}
