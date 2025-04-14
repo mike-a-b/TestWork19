@@ -24,7 +24,7 @@ function my_storefront_enqueue_scripts()
 	// добавление nonce
 	wp_localize_script( 'ajax', 'Ajax', array(
 		'ajax_url' => admin_url( 'admin-ajax.php' ),
-		'nonce'    => wp_create_nonce( 'child_ajax_nonce' )
+		'nonce'    => wp_create_nonce( 'ajax_nonce' )
 	));
 }
 

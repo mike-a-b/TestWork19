@@ -62,27 +62,11 @@ do_action( 'before_cities_table' );
                     $temp = 'No data';
                     if ( $city->latitude && $city->longitude ) {
                         $temp = get_temperature($city->latitude, $city->longitude);
-//                        $api_url = add_query_arg( array(
-//                            'lat'   => $city->latitude,
-//                            'lon'   => $city->longitude,
-//                            'appid' => 'd7fa018f2f67ac1f659eec67bb0a59b3', // change to your API key of API OpenWeatherMap
-//                            'units' => 'metric',
-//                            'lang'  => 'en'
-//                        ), 'https://api.openweathermap.org/data/2.5/weather' );
-//
-//                        $response = wp_remote_get( $api_url );
-//                        if ( ! is_wp_error( $response ) ) {
-//                            $body = wp_remote_retrieve_body( $response );
-//                            $data = json_decode( $body, true );
-//                            if ( isset( $data['main']['temp'] ) ) {
-//                                $temp = round( $data['main']['temp'] ) . '°C';
-//                            }
-//                        }
                     }
                     echo '<tr>';
-                    echo '<td>' . esc_html( $city->country_name ) . '</td>';
-                    echo '<td>' . esc_html( $city->city_name ) . '</td>';
-                    echo '<td>' . esc_html( $temp ) . '</td>';
+                    echo '<td>' . $city->country_name . '</td>';
+                    echo '<td>' . $city->city_name . '</td>';
+                    echo '<td>' . $temp . '</td>';
                     echo '</tr>';
                 }
             } else {
