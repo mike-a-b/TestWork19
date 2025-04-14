@@ -8,7 +8,7 @@ add_action( 'add_meta_boxes', 'cities_register_metabox' );
 function cities_register_metabox() {
 	add_meta_box(
 		'cities_meta', // ID
-		__( 'Данные города', 'my_storefront' ),
+		'City data:',
 		'cities_meta_callback', // display callback function
 		'cities', // which post type
 		'normal',
@@ -25,15 +25,15 @@ function cities_meta_callback( $post ) {
 	$longitude = get_post_meta( $post->ID, 'longitude', true );
 	?>
     <p>
-        <label for="cities_meta"><?php _e( 'Geo coordinates:', 'my_storefront' ); ?></label>
+        <label for="cities_meta"><?php echo 'Geo coordinates:'; ?></label>
     </p>
 	<p>
-		<label for="cities_latitude"><?php _e( 'Latitude:', 'my_storefront' ); ?></label>
-		<input type="text" id="cities_latitude" name="cities_latitude" value="<?php echo esc_attr( $latitude ); ?>" />
+		<label for="cities_latitude"><?php echo 'Latitude:'; ?></label>
+		<input type="text" id="cities_latitude" name="cities_latitude" value="<?php echo $latitude; ?>" />
 	</p>
 	<p>
-		<label for="cities_longitude"><?php _e( 'Longitude:', 'my_storefront' ); ?></label>
-		<input type="text" id="cities_longitude" name="cities_longitude" value="<?php echo esc_attr( $longitude ); ?>" />
+		<label for="cities_longitude"><?php echo 'Longitude:'; ?></label>
+		<input type="text" id="cities_longitude" name="cities_longitude" value="<?php echo $longitude; ?>" />
 	</p>
 	<?php
 }

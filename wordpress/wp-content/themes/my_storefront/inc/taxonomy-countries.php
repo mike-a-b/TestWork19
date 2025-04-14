@@ -7,17 +7,17 @@
 
 function register_countries_taxonomy() {
 	$labels = array(
-		'name'              => __( 'Countries', 'my_storefront' ),
-		'singular_name'     => __( 'Country', 'my_storefront' ),
-		'search_items'      => __( 'Find country', 'my_storefront' ),
-		'all_items'         => __( 'All countries', 'my_storefront' ),
-		'parent_item'       => __( 'Parent country', 'my_storefront' ),
-		'parent_item_colon' => __( 'Parent country:', 'my_storefront' ),
-		'edit_item'         => __( 'Edit country', 'my_storefront' ),
-		'update_item'       => __( 'Update country', 'my_storefront' ),
-		'add_new_item'      => __( 'Add new country', 'my_storefront' ),
-		'new_item_name'     => __( 'New name', 'my_storefront' ),
-		'menu_name'         => __( 'Countries', 'my_storefront' ),
+		'name'              => 'Countries',
+		'singular_name'     => 'Country',
+		'search_items'      => 'Find country',
+		'all_items'         => 'All countries',
+		'parent_item'       => 'Parent country',
+		'parent_item_colon' => 'Parent country:',
+		'edit_item'         => 'Edit country',
+		'update_item'       => 'Update country',
+		'add_new_item'      => 'Add new country',
+		'new_item_name'     => 'New name',
+		'menu_name'         => 'Countries',
 	);
 
 	$args = array(

@@ -9,16 +9,16 @@ function register_cities_cpt() : void
 {
 //	labels for admin panel on the page of adding a new city
 	$labels = array(
-		'name'               => __( 'Cities', 'my_storefront' ),
-		'singular_name'      => __( 'City', 'my_storefront' ),
-		'menu_name'          => __( 'Cities', 'my_storefront' ),
-		'name_admin_bar'     => __( 'City', 'my_storefront' ),
-		'add_new'            => __( 'Add new', 'my_storefront' ),
-		'add_new_item'       => __( 'Add new city', 'my_storefront' ),
-		'new_item'           => __( 'New city', 'my_storefront' ),
-		'edit_item'          => __( 'Edit city', 'my_storefront' ),
-		'view_item'          => __( 'View city', 'my_storefront' ),
-		'all_items'          => __( 'All cities', 'my_storefront' ),
+		'name'               => 'Cities',
+		'singular_name'      => 'City',
+		'menu_name'          => 'Cities',
+		'name_admin_bar'     => 'City',
+		'add_new'            => 'Add new',
+		'add_new_item'       => 'Add new city',
+		'new_item'           => 'New city',
+		'edit_item'          => 'Edit city',
+		'view_item'          => 'View city',
+		'all_items'          => 'All cities',
 	);
 
 	$args = array(
